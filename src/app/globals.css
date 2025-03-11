@@ -2,6 +2,10 @@
 
 @theme inline {
   --font-gobold: "Gobold", sans-serif;
+	--color-sand: #FFF1B6;   /* Beige/Amarillo claro (Fondo) */
+  --color-sunset: #F16B2E; /* Naranja fuerte (Botones) */
+  --color-gold: #FAE091;    /* Amarillo dorado (Barras y detalles) */
+  --color-cocoa: #682510; /* Marrón oscuro (Texto) */
 }
 
 @font-face {
