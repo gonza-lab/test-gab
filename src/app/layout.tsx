@@ -25,7 +25,7 @@ export default function RootLayout({
       >
         <Header />
         <div className="h-full">{children}</div>
-        <div className="">
+        <div className="block md:hidden bg-[#FFF4D3] border-t-2 border-t-[#BDA57D] py-2">
           <BottomTabs
             tabs={[
               {
@@ -34,7 +34,7 @@ export default function RootLayout({
                 href: "/brackets",
               },
               {
-                icon: <TicketsIcon />,
+                icon: <MoreIcon />,
                 label: "Tickets",
                 href: "/tickets",
               },
@@ -44,7 +44,7 @@ export default function RootLayout({
                 href: "/search",
               },
               {
-                icon: <MarketsIcon />,
+                icon: <MoreIcon />,
                 label: "Markets",
                 href: "/markets",
               },

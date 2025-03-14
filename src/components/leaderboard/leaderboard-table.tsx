@@ -3,7 +3,7 @@ import LeaderboardRow, { UserProps } from "./leaderboard-row";
 export default function LeaderboardTable({ users }: { users: UserProps[] }) {
   return (
     <div className="bg-sand">
-      <div className="grid grid-cols-[auto_70px_70px_54px] text-cocoa italic text-[13px] mb-[5px]">
+      <div className="grid grid-cols-[auto_70px_70px_54px] md:grid-cols-[200px_70px_auto_118px] text-cocoa italic text-[13px] mb-[5px] md:mb-[10px] md:text-[14px]">
         <span className="pl-[5px]">User</span>
         <span className="pl-[5px]">Ticket ID</span>
         <span className="flex items-center pl-[5px]">

@@ -14,7 +14,7 @@ export function TabItem({ children, active, href }: TabItemProps) {
       <div
         className={cn(
           "bg-[#F4DF89] rounded-t-[5px] border-2 border-b-0 border-cocoa text-cocoa text-[14px] px-[10px] py-[5px]",
-          { "bg-cocoa text-white": active },
+          { "bg-cocoa text-white border-[3px]": active },
         )}
       >
         {children}
@@ -29,7 +29,7 @@ interface TabListProps {
 
 export function TabList({ tabs }: TabListProps) {
   return (
-    <div className="flex flex-row gap-5 border-b-cocoa border-b-2">
+    <div className="flex flex-row gap-5 border-b-cocoa border-b-2 items-end">
       {tabs.map((tab, index) => (
         <TabItem key={index} {...tab} />
       ))}

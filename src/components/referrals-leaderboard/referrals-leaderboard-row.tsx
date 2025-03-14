@@ -37,12 +37,12 @@ export default function ReferralsLeaderboardRow({
             <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-purple-600 rounded-full flex items-center justify-center"></div>
           </div>
           <div className="flex flex-col">
-            <span className="text-[11px] text-[#A79069]">{rank}</span>
-            <span className="text-[13px] text-cocoa">{username}</span>
+            <span className="text-[11px] md:text-[12px] text-[#A79069]">{rank}</span>
+            <span className="text-[13px] md:text-[14px] text-cocoa">{username}</span>
           </div>
         </div>
 
-        <div className="flex items-center p-[5px] w-full h-full text-[12px] text-cocoa">
+        <div className="flex items-center p-[5px] w-full h-full text-[12px] md:text-[14px] text-cocoa">
           <span>{referrals.toLocaleString()}</span>
         </div>
       </div>
@@ -58,14 +58,14 @@ export default function ReferralsLeaderboardRow({
                 <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-purple-600 rounded-full flex items-center justify-center"></div>
               </div>
               <div className="flex flex-col text-white">
-                <span className="text-[11px]">{index+1}</span>
-                <span className="text-[13px]">
+                <span className="text-[11px] md:text-[12px]">{index+1}</span>
+                <span className="text-[13px] md:text-[14px]">
                   {referral.username}
                 </span>
               </div>
             </div>
 
-            <div className="flex items-center p-[5px] w-full h-full text-[12px] text-white">
+            <div className="flex items-center p-[5px] w-full h-full text-[12px] md:text-[14px] text-white">
               <span>{referral.referrals.toLocaleString()}</span>
             </div>
           </div>

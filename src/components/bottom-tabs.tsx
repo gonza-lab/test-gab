@@ -21,7 +21,7 @@ function BottomTab({ icon, label, href }: Tab) {
 
 export function BottomTabs({ tabs }: { tabs: Tab[] }) {
   return (
-    <div className="flex flex-row gap-4 justify-center bg-[#FFF4D3] border-t-2 border-t-[#BDA57D] py-2">
+    <div className="flex flex-row gap-4 justify-center ">
       {tabs.map((tab) => (
         <NavItem key={tab.href} href={tab.href}>
           <BottomTab {...tab} />

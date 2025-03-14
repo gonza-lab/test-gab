@@ -11,15 +11,23 @@ export default function BracketsLayout({
   const pathnameIsBrackets = pathname === "/brackets";
   return (
     <>
-      <div className="flex flex-row justify-center mt-[11px] mb-[15px]">
+      <div className="flex flex-row justify-center md:justify-start mt-[11px] mb-[15px] md:max-w-2xl md:mx-auto">
         <TabList
           tabs={[
-            { children: "Brackets", active: pathnameIsBrackets, href: '/brackets' },
-            { children: "Referrals", active: !pathnameIsBrackets, href: '/referrals' },
+            {
+              children: "Brackets",
+              active: pathnameIsBrackets,
+              href: "/brackets",
+            },
+            {
+              children: "Referrals",
+              active: !pathnameIsBrackets,
+              href: "/referrals",
+            },
           ]}
         />
       </div>
-      {children}
+      <div className="md:max-w-2xl md:mx-auto">{children}</div>
     </>
   );
 }

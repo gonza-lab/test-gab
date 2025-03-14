@@ -11,7 +11,7 @@ const users = [
 
 export default function Page() {
   return (
-    <div className="px-4">
+    <div className="px-4 md:px-0">
       <LeaderboardTable users={users} />
     </div>
   );

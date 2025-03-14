@@ -16,7 +16,7 @@ export default function LeaderboardRow({
   const isTop3 = rank <= 3;
 
   return (
-    <div className="grid grid-cols-[auto_70px_70px_54px] items-center rounded-lg mb-1">
+    <div className="grid grid-cols-[auto_70px_70px_54px] md:grid-cols-[200px_70px_auto_118px] items-center rounded-lg mb-1">
       <div className="flex flex-row">
         <div
           className={cn(
@@ -33,8 +33,8 @@ export default function LeaderboardRow({
             <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-purple-600 rounded-full flex items-center justify-center"></div>
           </div>
           <div className="flex flex-col">
-            <span className="text-[11px] text-[#A79069]">{rank}</span>
-            <span className="text-[13px] text-cocoa">{username}</span>
+            <span className="text-[11px] md:text-[12px] text-[#A79069]">{rank}</span>
+            <span className="text-[13px] md:text-[14px] text-cocoa">{username}</span>
           </div>
         </div>
         <div className="w-[3px] h-2 shrink-0"></div>
@@ -45,17 +45,18 @@ export default function LeaderboardRow({
       </div>
 
       <div className="flex flex-row h-full">
-        <div className="flex items-center p-[5px] bg-gold border-[#DAC385] border-2 w-full h-full text-[12px] text-cocoa border-l-0">
+        <div className="flex items-center p-[5px] bg-gold border-[#DAC385] border-2 w-full h-full text-[12px] md:text-[14px] text-cocoa border-l-0">
           <span>{points.toLocaleString()}</span>
         </div>
 
         <div className="w-[3px] h-2 shrink-0"></div>
       </div>
 
-      <div className="bg-sand border-[#DAC385] border-2 h-full flex items-center justify-center flex-col">
-        <span className="text-[11px] text-cocoa font-gobold-lowplus">Get ticket</span>
-        <div>
+      <div className="bg-sand border-[#DAC385] border-2 h-full flex items-center justify-center flex-col md:flex-row-reverse md:gap-3 cursor-pointer">
+        <span className="text-[11px] md:text-[12px] md:leading-[12px] text-cocoa font-gobold-lowplus">Get ticket</span>
+        <div className="w-6">
           <svg
+						className=" md:w-6 h-[15px]"
             width="18"
             height="11"
             viewBox="0 0 18 11"

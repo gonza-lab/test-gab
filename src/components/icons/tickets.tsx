@@ -12,22 +12,22 @@ export function TicketsIcon() {
         x="0.5"
         width="12.75"
         height="19.2368"
-        fill="url(#pattern0_18_426)"
+        fill="url(#pattern0_37_426)"
       />
       <defs>
         <pattern
-          id="pattern0_18_426"
+          id="pattern0_37_426"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
         >
           <use
-            xlinkHref="#image0_18_426"
+            xlinkHref="#image0_37_426"
             transform="matrix(0.00859013 0 0 0.00569346 -1.17544 -0.00137065)"
           />
         </pattern>
         <image
-          id="image0_18_426"
+          id="image0_37_426"
           width="386"
           height="315"
           preserveAspectRatio="none"

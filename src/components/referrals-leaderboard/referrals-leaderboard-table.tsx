@@ -11,7 +11,7 @@ export default function ReferralsLeaderboardTable({
 }) {
   return (
     <div className="bg-sand">
-      <div className="grid grid-cols-[auto_100px] text-cocoa italic text-[13px] mb-[5px]">
+      <div className="grid grid-cols-[auto_100px] text-cocoa italic text-[13px] md:text-[14px] mb-[5px]">
         <span className="pl-[5px]">User</span>
         <span className="flex items-center pl-[5px]">
           Referrals
