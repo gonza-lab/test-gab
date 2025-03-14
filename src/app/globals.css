@@ -2,6 +2,7 @@
 
 @theme inline {
   --font-gobold: "Gobold", sans-serif;
+  --font-gobold-lowplus: "Gobold Lowplus", sans-serif;
 	--color-sand: #FFF1B6;   /* Beige/Amarillo claro (Fondo) */
   --color-sunset: #F16B2E; /* Naranja fuerte (Botones) */
   --color-gold: #FAE091;    /* Amarillo dorado (Barras y detalles) */
@@ -108,29 +109,15 @@
 
 @font-face {
   font-family: "Gobold";
-  src: url("/fonts/Gobold Lowplus.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gobold";
-  src: url("/fonts/Gobold Lowplus Italic.otf") format("opentype");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Gobold";
   src: url("/fonts/Gobold Regular.otf") format("opentype");
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gobold";
   src: url("/fonts/Gobold Regular Italic.otf") format("opentype");
-  font-weight: 500;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -161,3 +148,12 @@
   font-weight: 600;
   font-style: italic;
 }
+
+/* GOBOLD LOWPLUS */
+@font-face {
+  font-family: "Gobold Lowplus";
+  src: url("/fonts/Gobold Lowplus.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
