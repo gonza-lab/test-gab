@@ -6,6 +6,7 @@ import { TicketsIcon } from "@/components/icons/tickets";
 import { SearchIcon } from "@/components/icons/search";
 import { MarketsIcon } from "@/components/icons/markets";
 import { MoreIcon } from "@/components/icons/more";
+import Header from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-[url(/background_image.png)] h-full">
-      <body className={`antialiased font-gobold flex flex-col justify-between items-stretch h-full`}>
+      <body
+        className={`antialiased font-gobold flex flex-col justify-between items-stretch h-full`}
+      >
+        <Header />
         <div className="h-full">{children}</div>
         <div className="">
           <BottomTabs

@@ -1,13 +1,20 @@
-import LeaderboardRow, { UserProps } from "./leaderboard-row";
+import ReferralsLeaderboardRow, {
+  ReferralsLeaderboardRowProps,
+} from "./referrals-leaderboard-row";
 
-export default function LeaderboardTable({ users }: { users: UserProps[] }) {
+export default function ReferralsLeaderboardTable({
+  referrals,
+  onClickReferral,
+}: {
+  referrals: Omit<ReferralsLeaderboardRowProps, "onToggleExpand">[];
+  onClickReferral: (id: number) => void;
+}) {
   return (
     <div className="bg-sand">
-      <div className="grid grid-cols-[auto_70px_70px_54px] text-cocoa italic text-[13px] mb-[5px]">
+      <div className="grid grid-cols-[auto_100px] text-cocoa italic text-[13px] mb-[5px]">
         <span className="pl-[5px]">User</span>
-        <span className="pl-[5px]">Ticket ID</span>
         <span className="flex items-center pl-[5px]">
-          Points
+          Referrals
           <div className="flex items-center justify-center w-3 ml-2">
             <svg
               width="14"
@@ -26,10 +33,13 @@ export default function LeaderboardTable({ users }: { users: UserProps[] }) {
             </svg>
           </div>
         </span>
-        <span></span>
       </div>
-      {users.map((user, index) => (
-        <LeaderboardRow key={index} {...user} />
+      {referrals.map((referral, index) => (
+        <ReferralsLeaderboardRow
+          key={referral.id}
+          {...referral}
+          onToggleExpand={onClickReferral}
+        />
       ))}
     </div>
   );
